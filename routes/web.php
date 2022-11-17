@@ -14,5 +14,22 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('home', ["judul" => "Home"]);
+});
+Route::get('/about', function () {
+    return view('about', [
+        "judul" => "About",
+        "nama" => "M.Miftakhudin",
+        "email" => "mmiftakh18@gmail.com",
+        "image" => "miftakh.jpg"
+    ]);
+});
+Route::get('/popular', function () {
+    return view('popular_items', ["judul" => "Popular Items"]);
+});
+Route::get('/arrivals', function () {
+    return view('new_arrivals', ["judul" => "New Arrivals"]);
+});
+Route::get('/all', function () {
+    return view('all_products', ["judul" => "All Products"]);
 });
