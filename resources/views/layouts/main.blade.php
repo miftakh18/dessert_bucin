@@ -5,21 +5,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dessert Bucin | {{ $judul }}</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="/bootstrap5/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/fontawesome6/css/all.min.css">
 </head>
 
-<body>
+<body class="bg-light">
     @include('partials.navbar')
     <!-- <div class="container-fluid"> -->
     @yield('main_utama')
 
     <footer class="py-5 bg-dark">
         <div class="container">
-            <p class="m-0 text-center text-white">Copyright &copy; Your Website 2022</p>
+            <p class="m-0 text-center text-white">Copyright &copy; Miftakhudin 2022
+
+
+
+            </p>
         </div>
     </footer>
     <!-- </div> -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="/bootstrap5/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/fontawesome6/js/all.min.js"></script>
 </body>
 
 </html>
